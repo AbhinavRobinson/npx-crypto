@@ -9,8 +9,17 @@ This is a npx-sockets react app which I have used to perform my crypography cour
 ## Requirements
 
 - `NPM npx compatible`
+- For Demo, please contact me as the MongoDB server access is not public. You can setup your own mongodb connection by editing the message.js file at the indicated comment.
 
 ## Instructions
 
-- `npm i` can be used to install all modules
-- `npm start` is used to run the application
+- perform `npm init -y` in both frontend and backend DIRs.
+- assuming you have DB access, perform `node ./index.js --user=crypto` in backend DIR. 
+- now, perform `npm start` in frontend DIR.
+- given `Connection Establised Message`, npm should open up a browser window.
+- Type in the chat box, and perform encrytion (press ENTER to send message)
+- to close enviorment, simply kill all node operations.
+
+## Contact
+
+You can check out my profile page to obtain contact information.

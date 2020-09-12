@@ -7,7 +7,10 @@ const username = process.argv[2].split('=')[1]
 console.log(`Hello, ${username}`)
 const userSchema = require('./userSchema.js')
 
-// If you want to test this, message me, for now, only my IP can call this function!
+/* ! important
+ * If you want to test this, message me, for now, only my IP can call this function! 
+ * OR Add your own connection string 
+ */
 const connectionString = 'mongodb+srv://crypto:Abhi2310@cluster0.0bkns.mongodb.net/chat-demo?retryWrites=true&w=majority'
 
 const port = 8463;
