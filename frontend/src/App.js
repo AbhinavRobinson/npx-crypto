@@ -32,7 +32,7 @@ const MessageBox = () => {
 
     return (
         <form onSubmit={ postMessage }>
-            <input type="text" className="input" placeholder="message"
+            <input type="text" className="input" placeholder="FORMAT:text key"
                    value={ value } onChange={ e => setValue(e.target.value) }
             />
         </form>

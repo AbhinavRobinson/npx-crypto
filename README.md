@@ -13,10 +13,10 @@ This is a npx-sockets react app which I have used to perform my crypography cour
 
 ## Instructions
 
-- perform `npm init -y` in both frontend and backend DIRs.
+- perform `npm init -y` in frontend and `npm i express socket.io mongoose cors` in backend DIR.
 - assuming you have DB access, perform `node ./index.js --user=crypto` in backend DIR. 
 - now, perform `npm start` in frontend DIR.
-- given `Connection Establised Message`, npm should open up a browser window.
+- given `Connection Establised` message, npm should open up a browser window, you should observe a `client connected...` message.
 - Type in the chat box, and perform encrytion (press ENTER to send message)
 - to close enviorment, simply kill all node operations.
 

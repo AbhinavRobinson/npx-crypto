@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-
+const encryption = require("./encryption.js");
 
 const MessageSchema = mongoose.Schema({
     date: {
@@ -20,11 +20,12 @@ MessageSchema.statics.latest = (count) => {
 MessageSchema.statics.create = (content) => {
     let msg = new MessageModel({
         date: new Date(),
-        content: content
+        content: encryption.encrypt(content)
     });
-
     return msg.save();
 };
+
+
 
 
 const MessageModel = mongoose.model("Message", MessageSchema);

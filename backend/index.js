@@ -5,7 +5,6 @@ const Message = require("./models/message.js");
 
 const username = process.argv[2].split('=')[1]
 console.log(`Hello, ${username}`)
-const userSchema = require('./userSchema.js')
 
 /* ! important
  * If you want to test this, message me, for now, only my IP can call this function! 
@@ -38,6 +37,8 @@ async function main() {
     const socket = require("socket.io")(server);
     socket.on("connection", async (client) => {
         console.log("client connected...");
+
+        socket.emit("message", "Format : <text> <key:10>");
 
         client.on("message", async (msg) => {
             let message = await Message.Schema.statics.create(msg);
